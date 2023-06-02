@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/aboutContainer.css">
+    <link rel="alternative" href="./assets/Files/email.php">
+    <title>William Shaver's Portfolio</title>
+</head>
+<body>
+    <div class="bodyContainer">
+        <nav class="nav">
+                <a class="navAboutMe" href="#aboutMeLink">About Me</a>
+                <a class="navProj" href="#projectsLink">Projects</a>
+                <h1 class="h1Portfolio">William Shaver's Portfolio</h1>
+                
+        </nav>
+        <header class="header">
+                <img class="headerBackground" src="./assets/images/Inlet.JPG" alt="A photo I took overlooking the inlet at Teddy Bear Cove and train tracks near Bellingham Washing">
+                <h3 class="quickIntro">Thank you for visiting my page. This is where you can find projects I've contributed to or am working on, ways to contact me and a bit about who I am!</h3>
+        </header>
+        <section class="content">
+            <h2 class="aboutMeH2" id="aboutMeLink">About Me</h2>
+            <div class="aboutMe" >
+                <p>Hello, my name is William and I currently reside in Grand Rapids! I've had an interest in coding since a young age, but having always been on the move I've always found it difficult to learn. Now that I'm a bit older and settled I'm attending class online at We Can Code IT thanks to Amazon career services.</p>
+                <p>As well as coding I have an interest in Photography and travel, I picked up my first real camera when I lived in Alaska which was the 6th out of 9 states I've lived in. It was a Mirror-less Panasonic GH-4 and I still have it to this day! While I'm an amateur photographer who mostly does landscape work. I have a huge passion for night photography and the challenge that comes with it. You can also occasionally catch me doing city shots or even attempting my hand at astrophotography.</p>
+            </div>
+            <div class="myImg">
+                <img id="me" src="./assets/images/me.jpg" alt="A photo of me next to my Ford Escape">
+            </div>
+            <div class="links">
+                <p>You can mainly find me on <a href="https://github.com/William-Shaver?tab=repositories">GitHub</a> but I also have <a href="https://www.linkedin.com/in/william-shaver-668825146/">Linkedin</a>. You can also email me at william.shaver96@gmail.com</p>
+            </div>
+            <div class="skils">
+                <p class="pSkills">Skills</p>
+                <ul>
+                    <li>Photography</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <form action="./assets/Files/email.php" method="post">
+                        <label for="nameFirst">First Name<input type="text" name="emailform" id="nameFirst" placeholder="John" required></label>
+                        <br>
+                        <label for="nameLast"> Last Name<input type="text" name="emailform" id="nameLast" placeholder="Smith" required></label>
+                        <br>
+                        <label for="email">Email Address<input type="email" name="emailform" id="email" placeholder="JohnSmith@AOL.com" required></label>
+                        <br>
+                        <label for="message">How can I help you?<textarea name="emailform" id="message" cols="30" rows="4" placeholder="Hello, I own a restaurant and I was curious if you're available for a website commission?"></textarea></label>
+                        <br>
+                        <Label><button type="submit">Submit</button></Label>
+                </form>
+            </div>
+        </section>
+        <section id="projectsLink" class="projects">
+            <h2 class="projectH2">Projects</h2>
+                <p class="projectIntro">Feel free to take a look at some of the things I've made!</p>
+            <article class="profPort">
+                <h3 class="profPortH3">Professional Portfolio</h3>
+                <p class="profPortBody">This website is actually my first Project! Kind of neat right? You can view the code <a href="https://github.com/William-Shaver/Professional-Portfolio">right here</a> if you'd like! As it's the first real project I've made, this spot will be a little empty for now. But with every assignment and practice project, this section will grow!</p>
+                <ul class="HTMLCSSLIST"><b>Skills Used:</b>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <img class="profPortScreenshot" id="profPortScreenshotID" src="./assets/images/profPortScreenshotCode.jpg" alt="The code behind my site!">
+            </article>
+            <article class="leatherFormCert">
+                <h3 class="leatherFormCertH3">Leather Commission Form</h3>
+                <p class="leatherFormCertBody">This is a quick <a href="https://github.com/William-Shaver/Leather-Form-Cert-Project"> Leather Commission Form</a> I made for FreeCodeCamps responsive web course. We needed to make 5 projects to earn our certificates and this was the first one! </p>
+                <ul class="HTMLCSSLIST"><b>Skills Used:</b>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <img class="leatherScreenshot" id="leatherScreenshotID" src="./assets/images/leatherFormCertScreenshotTight1.jpg" alt="A screenshot of my Leather Commission Form project">
+            </article>
+        </section>
+            <footer class="footer">
+                <a href="https://github.com/William-Shaver?tab=repositories"><img src="./assets/images/github32.png" alt=""></a>
+                <a  href="https://www.linkedin.com/in/william-shaver-668825146/"><img class="linkedIcon" src="./assets/images/linkedin.png" alt=""></a>
+                <br>
+                <!-- <p>I need test text here. So for now let me introduce you to a skunk named <a target="blank" href="https://youtube.com/shorts/DWKrvpZrok4?feature=share"> Atari.</a></p> -->
+                <!-- Leaving this here, Atari is such a good girl -->
+                <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+            </footer>
+        </div>
+</body>
+</html>

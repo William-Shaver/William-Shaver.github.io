@@ -1,0 +1,184 @@
+.bodyContainer {
+    display: grid;
+    flex-direction: row;
+    grid-template-areas:
+        'nav'
+        'header'
+        'content'
+        'projects'
+        'footer';
+}
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    word-break: break-word;
+    padding-bottom: .5em;
+}
+.quickIntro {
+    grid-area: quickIntro;
+    padding: 1em;
+    position: absolute;
+    color: rgb(255, 255, 255);
+}
+.headerBackground {
+    grid-area:headerbg;
+    image-resolution: 3600px;
+    max-width: 100%;
+}
+.content {
+    place-items: center;
+    text-align: center;
+    grid-area: content;
+    display: grid;
+    flex-direction: row;
+    margin-inline: auto;
+    border: 5px solid rgba(30, 30, 230, 0.76);
+    width: min(75ch, 100% - 4rem);
+    grid-template-columns: auto auto;
+    border-radius: 25px 25px 0 0;
+    grid-template-areas:
+    'aboutMeH2 aboutMeH2'
+    'aboutMe myImg'
+    'links skills'
+    'contact contact';
+}
+.projects {
+    grid-area: projects;
+    display: grid;
+    flex-direction: row;
+    margin-inline: auto;
+    border: 5px solid rgba(30, 30, 230, 0.76);
+    width: min(75ch, 100% - 4rem);
+    grid-template-columns: auto auto;
+    margin-top: .5em;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        'projectH2 projectH2'
+        'projectIntro projectIntro'
+        'profPort profPort'
+        'leatherFormCert leatherFormCert';
+}
+.projectH2 {
+    grid-area: projectH2;
+    
+}
+.projectIntro {
+    grid-area: projectIntro;
+    margin: 0;
+}
+.profPort {
+    grid-area: profPort;
+    display: grid;
+    flex-direction: row;
+    margin-inline: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'profPortH3 profPortH3'
+    'profPortScreenshot profPortScreenshot'
+    'profPortBody HTMLCSSLIST';
+}
+.profPortH3 {
+    grid-area: profPortH3;
+}
+.profPortBody {
+    grid-area: profPortBody;
+    margin: 10px 0 0 10px;
+    text-indent: 30px;
+}
+.profPortScreenshot {
+    grid-area: profPortScreenshot;
+}
+.leatherFormCert {
+    grid-area: leatherFormCert;
+    place-items: center;
+    text-align: center;
+    display: grid;
+    flex-direction: row;
+    margin-inline: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'leatherFormCertH3 leatherFormCertH3'
+    'leatherScreenshot leatherScreenshot'
+    'leatherFormCertBody HTMLCSSLIST';
+}
+.leatherFormCertH3 {
+    grid-area: leatherFormCertH3;
+}
+.leatherFormCertBody {
+    grid-area: leatherFormCertBody;
+    margin: 10px 0 0 10px;
+    text-indent: 30px;
+}
+.leatherScreenshot {
+    grid-area: leatherScreenshot;
+    max-width: 500px;
+}
+.HTMLCSSLIST {
+    grid-area: HTMLCSSLIST;
+    margin-left: 5px;
+}
+.footer {
+    grid-area: footer;
+    width: min(75ch, 100% - 4rem);
+    margin-inline: auto;
+    border: 5px solid rgba(30, 30, 230, 0.76);
+    border-radius: 0 0 25px 25px;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em 0 .5em 0;
+}
+.h1Portfolio {
+    grid-area: h1Portfolio;
+    color: rgb(236, 236, 236);
+    text-decoration: double;
+    order: 2;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    background-color: forestgreen;
+    padding: .5em;
+}
+.navAboutMe {
+    order: 1;
+    font-size: 20px;
+}
+.navProj {
+    order: 3;
+    font-size: 20px;
+}
+.aboutMe {
+    grid-area: aboutMe;
+    padding: 1em;
+    margin-top: 0;
+    text-indent: 30px;
+}
+.myImg {
+    grid-area: myImg;
+}
+.links {
+    grid-area: links;
+    padding-right: 1em;
+    text-indent: 30px;
+
+}
+.skills {
+    grid-area: skills;
+    font-weight: bold;
+}
+.contact {
+    grid-area: contact;
+}
+.aboutMeH2 {
+    grid-area: aboutMeH2;
+}

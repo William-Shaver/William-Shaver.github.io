@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(120deg, #00ffff79, #0a16b9ce);
+    font-family: 'Poltawski Nowy', serif;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+    border: 0;
+    margin: 0;
+}
+#me {
+    max-width: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+a:link,
+a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+button,
+textarea,
+input {
+    vertical-align: top;
+    border-radius: 10px;
+    margin: .5em;
+    line-height: 1.5;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul{
+    padding: 0 20px 0 20px;
+    /* padding-bottom: 15px; */
+    margin: 0;
+}
+.pSkills {
+    margin: 0 0 10px 0;
+}
+#profPortScreenshotID,
+#leatherScreenshotID {
+    max-width: 742px;
+}
+.linkedIcon {
+    max-width: 32px;
+}
